@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSIILoaiza.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="12" CornerRadius="0">
+            <Label Text="Calificaciones UISRAEL" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        <Label Text="Ingrese sus notas :" FontSize="Title" Padding="30,10,30,10"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Seguimiento I" FontSize="Medium" Grid.Row="0" Grid.Column="0" Padding="20,0,0,0" Margin="0,0"/>
+            <Entry x:Name="txtNs1" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" />
+            <Label Text="Examen I" FontSize="Medium" Grid.Row="1" Grid.Column="0" Padding="20,0,0,0" />
+            <Entry x:Name="txtNe1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Parcial I" FontSize="Medium" Grid.Row="2" Grid.Column="0" Padding="20,0,0,0"/>
+            <Entry x:Name="txtNp1" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" IsReadOnly="True" />
+            
+            <Label Text="Seguimiento II" FontSize="Medium" Grid.Row="3" Grid.Column="0" Padding="20,0,0,0"/>
+            <Entry x:Name="txtNs2" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" />
+            <Label Text="Examen II" FontSize="Medium" Grid.Row="4" Grid.Column="0" Padding="20,0,0,0"/>
+            <Entry x:Name="txtNe2" Keyboard="Numeric" Grid.Row="4" Grid.Column="1" />
+            <Label Text="Parcial II" FontSize="Medium" Grid.Row="5" Grid.Column="0" Padding="20,0,0,0"/>
+            <Entry x:Name="txtNp2" Keyboard="Numeric" Grid.Row="5" Grid.Column="1"  IsReadOnly="True" />
+
+            <Label  x:Name="txtMsg"  FontSize="Medium" Grid.Row="6" Grid.Column="0"  Padding="20,0,0,0"  />
+            <Entry x:Name="txtNt" Keyboard="Numeric" FontSize="Medium" Text="TOTAL" Grid.Row="6" Grid.Column="1"  IsReadOnly="True"  />
+        </Grid>
+
+        <Button Text="Calcular" x:Name="btnCalc" Clicked="btnCalc_Clicked" Margin="80,5"></Button>
+        
+        
+    </StackLayout>
+
+</ContentPage>
